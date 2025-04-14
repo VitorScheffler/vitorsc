@@ -1,21 +1,95 @@
-/* Adicionar variáveis de cores */
 :root {
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
-    --light-color: #f8f9fa;
-  }
-  
-  /* Melhorar tipografia */
-  body {
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-  }
-  
-  /* Efeitos de hover nos cards */
-  .card {
-    transition: transform 0.3s ease;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
+  --bg-dark: #121212;
+  --bg-card: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --primary-color: #bb86fc;
+  --primary-variant: #3700b3;
+  --secondary-color: #03dac6;
+  --error-color: #cf6679;
+  --border-color: #333333;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-dark {
+  background-color: var(--bg-card) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Cards */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-variant);
+  border-color: var(--primary-variant);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+/* Formulários */
+.form-control, .form-select {
+  background-color: #2d2d2d;
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #3d3d3d;
+  color: var(--text-primary);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(187, 134, 252, 0.25);
+}
+
+/* Progress bars */
+.progress {
+  background-color: #2d2d2d;
+}
+
+/* Listas */
+.list-group-item {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}

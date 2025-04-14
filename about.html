@@ -9,25 +9,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-light">
+<body>
 
-  <!-- Navbar (igual ao index.html) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Vitor Scheffler</a>
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash me-2"></i>Vitor Scheffler</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a>
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="about.html"><i class="bi bi-person"></i> Sobre Mim</a>
+            <a class="nav-link active" href="about.html"><i class="bi bi-person me-1"></i> Sobre Mim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contato</a>
+            <a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i> Contato</a>
           </li>
         </ul>
       </div>
@@ -38,66 +38,68 @@
   <main class="container my-5">
     <div class="row">
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-primary mb-4">Sobre Mim</h1>
-        <p class="lead">Olá! Sou Vitor Scheffler, desenvolvedor web apaixonado por criar soluções digitais.</p>
+        <h1 class="display-5 fw-bold text-primary mb-4"><i class="bi bi-person-circle me-2"></i>Sobre Mim</h1>
+        <p class="lead text-secondary">Olá! Sou Vitor Scheffler, desenvolvedor web apaixonado por criar soluções digitais.</p>
         
-        <h2 class="h4 mt-5"><i class="bi bi-book"></i> Formação</h2>
+        <h2 class="h4 mt-5 text-primary"><i class="bi bi-book me-2"></i>Formação</h2>
         <ul class="list-unstyled">
-          <li class="mb-2"><strong>Análise e Desenvolvimento de Sistemas</strong> - Universidade XYZ (2020-2023)</li>
-          <li class="mb-2"><strong>Curso Avançado de JavaScript</strong> - Alura (2022)</li>
+          <li class="mb-2"><strong class="text-primary">Análise e Desenvolvimento de Sistemas</strong><br>
+            <span class="text-secondary">Universidade XYZ (2020-2023)</span></li>
+          <li class="mb-2"><strong class="text-primary">Curso Avançado de JavaScript</strong><br>
+            <span class="text-secondary">Alura (2022)</span></li>
         </ul>
         
-        <h2 class="h4 mt-4"><i class="bi bi-briefcase"></i> Experiência</h2>
-        <div class="card mb-3 border-0 shadow-sm">
+        <h2 class="h4 mt-4 text-primary"><i class="bi bi-briefcase me-2"></i>Experiência</h2>
+        <div class="card mb-3 border-secondary">
           <div class="card-body">
-            <h3 class="h5 card-title">Desenvolvedor Front-end - Empresa ABC</h3>
-            <p class="card-text text-muted">2021 - Atual</p>
+            <h3 class="h5 card-title text-primary">Desenvolvedor Front-end - Empresa ABC</h3>
+            <p class="card-text text-secondary">2021 - Atual</p>
             <p class="card-text">Desenvolvimento de interfaces web responsivas com React.js e integração com APIs REST.</p>
           </div>
         </div>
       </div>
       
       <div class="col-lg-6">
-        <div class="card shadow-sm border-0">
+        <div class="card border-secondary">
           <div class="card-body">
-            <h2 class="h4"><i class="bi bi-gear"></i> Habilidades Técnicas</h2>
+            <h2 class="h4 text-primary"><i class="bi bi-gear me-2"></i>Habilidades Técnicas</h2>
             
-            <h3 class="h5 mt-4">Front-end</h3>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-success" style="width: 95%">HTML5/CSS3</div>
+            <h3 class="h5 mt-4 text-primary">Front-end</h3>
+            <div class="progress mb-3 bg-dark">
+              <div class="progress-bar bg-primary" style="width: 95%">HTML5/CSS3</div>
             </div>
-            <div class="progress mb-3">
+            <div class="progress mb-3 bg-dark">
               <div class="progress-bar bg-info" style="width: 90%">JavaScript</div>
             </div>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-primary" style="width: 85%">React</div>
+            <div class="progress mb-3 bg-dark">
+              <div class="progress-bar bg-purple" style="width: 85%">React</div>
             </div>
             
-            <h3 class="h5 mt-4">Back-end</h3>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-warning" style="width: 80%">Node.js</div>
+            <h3 class="h5 mt-4 text-primary">Back-end</h3>
+            <div class="progress mb-3 bg-dark">
+              <div class="progress-bar bg-warning text-dark" style="width: 80%">Node.js</div>
             </div>
-            <div class="progress mb-3">
+            <div class="progress mb-3 bg-dark">
               <div class="progress-bar bg-danger" style="width: 75%">Python</div>
             </div>
             
-            <h3 class="h5 mt-4">Idiomas</h3>
-            <div class="progress mb-3">
+            <h3 class="h5 mt-4 text-primary">Idiomas</h3>
+            <div class="progress mb-3 bg-dark">
               <div class="progress-bar bg-secondary" style="width: 100%">Português (Nativo)</div>
             </div>
-            <div class="progress mb-3">
+            <div class="progress mb-3 bg-dark">
               <div class="progress-bar bg-dark" style="width: 80%">Inglês (Avançado)</div>
             </div>
           </div>
         </div>
         
-        <div class="card shadow-sm border-0 mt-4">
+        <div class="card border-secondary mt-4">
           <div class="card-body">
-            <h2 class="h4"><i class="bi bi-trophy"></i> Certificações</h2>
+            <h2 class="h4 text-primary"><i class="bi bi-trophy me-2"></i>Certificações</h2>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0">Certificação AWS Cloud Practitioner</li>
-              <li class="list-group-item border-0">Scrum Fundamentals Certified</li>
-              <li class="list-group-item border-0">Google Analytics Individual Qualification</li>
+              <li class="list-group-item bg-transparent text-secondary border-secondary">Certificação AWS Cloud Practitioner</li>
+              <li class="list-group-item bg-transparent text-secondary border-secondary">Scrum Fundamentals Certified</li>
+              <li class="list-group-item bg-transparent text-secondary border-secondary">Google Analytics Individual Qualification</li>
             </ul>
           </div>
         </div>
@@ -105,17 +107,17 @@
     </div>
   </main>
 
-  <!-- Footer (igual ao index.html) -->
-  <footer class="bg-dark text-white py-4">
+  <!-- Footer -->
+  <footer class="py-4 border-top border-secondary">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center text-md-start">
-          <p class="mb-0">© 2023 Vitor Scheffler. Todos os direitos reservados.</p>
+          <p class="mb-0 text-secondary">© 2023 Vitor Scheffler. Todos os direitos reservados.</p>
         </div>
         <div class="col-md-6 text-center text-md-end">
-          <a href="#" class="text-white mx-2"><i class="bi bi-github"></i></a>
-          <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
-          <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-primary mx-2 fs-5"><i class="bi bi-github"></i></a>
+          <a href="#" class="text-primary mx-2 fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-primary mx-2 fs-5"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
     </div>
