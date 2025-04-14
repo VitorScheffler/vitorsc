@@ -4,42 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio de Vitor Scheffler</title>
-  <!-- CDN do Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Seu CSS Personalizado -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-light">
 
-  <!-- Header -->
-  <header class="text-center py-12">
-    <h1 class="text-4xl font-bold text-blue-600">Bem-vindo ao meu Portfólio!</h1>
-    <p class="mt-4 text-xl">Sou desenvolvedor web e este é o meu portfólio interativo.</p>
-  </header>
-
-  <!-- Navegação -->
-  <nav class="text-center mb-12">
-    <a href="about.html" class="text-blue-500 hover:underline mx-4">Sobre Mim</a>
-    <a href="contact.html" class="text-blue-500 hover:underline mx-4">Contato</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Vitor Scheffler</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
+  <!-- Header -->
+  <header class="text-center py-5">
+    <h1 class="display-4 text-primary">Bem-vindo ao meu Portfólio!</h1>
+    <p class="lead">Sou desenvolvedor web e este é o meu portfólio interativo.</p>
+  </header>
+
   <!-- Seção de Projetos -->
-  <section class="text-center py-12 bg-white">
-    <h2 class="text-3xl font-semibold text-blue-600">Meus Projetos</h2>
-    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-bold">Projeto 1</h3>
-        <p>Descrição do Projeto 1. Um projeto interessante que fiz usando HTML, CSS, e Tailwind CSS.</p>
+  <section class="container py-5">
+    <h2 class="text-center text-primary mb-4">Meus Projetos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 1">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 1</h5>
+            <p class="card-text">Descrição do Projeto 1. Um projeto interessante que fiz usando HTML, CSS, e JS puro.</p>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-bold">Projeto 2</h3>
-        <p>Descrição do Projeto 2. Um projeto impressionante que resolvi com uma abordagem criativa.</p>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 2">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 2</h5>
+            <p class="card-text">Descrição do Projeto 2. Um projeto impressionante que resolvi com uma abordagem criativa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 3">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 3</h5>
+            <p class="card-text">Descrição do Projeto 3. Um projeto que utilizei tecnologia de ponta para resolver um grande problema.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-6 bg-gray-200">
+  <footer class="text-center py-3 bg-primary text-white">
     <p>© 2025 Vitor Scheffler</p>
   </footer>
 
+  <!-- Bootstrap JS e dependências -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Seu JS personalizado -->
+  <script src="js/script.js"></script>
 </body>
 </html>
